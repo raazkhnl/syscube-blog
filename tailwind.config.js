@@ -10,6 +10,12 @@ export default {
     ],
 
     theme: {
+        screens: {
+            'sm': '576px',
+            'md': '720px',
+            // => @media (min-width: 720px) { ... }
+      
+          },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],

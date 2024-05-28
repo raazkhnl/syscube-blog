@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
-    AdminController,   
+    AdminController,
+    ProfileController,   
     UserController,
     BlogController,
     CommentController,
@@ -15,14 +16,14 @@ Route::get('/', function () {
 });
 
 // Dashboard route
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
+Route::get('/dashboard',[BlogController::class, 'index'])->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
+Route::get('/blogs',[BlogController::class, 'index'])->middleware(['auth', 'verified'])->name('blogs');
+
 Route::get('/admin/dashboard',[AdminController::class, 'index'])->name('admin.dashboard')->middleware(['auth', 'role:admin']);
 
 // Blog routes
 Route::prefix('blog')->middleware('auth')->group(function () {
-    Route::get('create', function () {
+    Route::get('create', function () {  
         return view('blog.create');
     })->name('blog.create');
     

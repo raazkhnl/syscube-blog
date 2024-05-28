@@ -8,6 +8,9 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Custom  -->
+        {{-- Icon --}}
+    <link rel="icon" href="../storage/Images/icon.png" type="image/gif" sizes="30x30">
+   
         <script src="https://kit.fontawesome.com/7d5e5f5fa1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 

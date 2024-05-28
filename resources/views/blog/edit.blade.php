@@ -1,7 +1,7 @@
 
 <x-app-layout>
     {{-- <-- Edit Blog --> --}}
-    <div class="container mt-3">
+    <div class="container mt-3 w-75">
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-success text-gray-800 leading-tight">
                 {{ __('Edit Blog') }}
@@ -26,7 +26,7 @@
                         
                         <div class="form-group mt-3">
                             <label for="description">Description</label>
-                            <textarea class="form-control" name="description" id="description" rows="10" placeholder="Description on the Blog">{{$blog->description}}</textarea>
+                            <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description on the Blog">{{$blog->description}}</textarea>
                             @error('description')
                             <span class="text-danger">{{$message}}</span>
                             @enderror

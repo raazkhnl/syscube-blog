@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Comment;
-use App\Models\Reactors;
+use App\Models\Reactor;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller

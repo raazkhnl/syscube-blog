@@ -6,16 +6,13 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                    <img src="{{ asset('storage\Images\BlogLogo.png') }}" class="img-fluid" style="width:100px " alt="logo">
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden sm:flex sm:space-x-8 sm:-my-px sm:ml-[20px] ms-4 gap-2">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" >
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('blog')">
                         {{ __('Blogs') }}
                     </x-nav-link>
                     <x-nav-link :href="route('blog.create')" :active="request()->routeIs('blog.create')">
@@ -24,7 +21,7 @@
                     <x-nav-link :href="route('blog.service')" :active="request()->routeIs('blog.service')">
                         {{ __('Our Services') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('user.profile', auth()->id())" :active="request()->routeIs('user.profile')">
+                    <x-nav-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
                         {{ __('Profile') }}
                     </x-nav-link>
                 </div>

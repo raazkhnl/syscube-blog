@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('reactors', function (Blueprint $table) {
             $table->id();
+            $table->unsignedSmallInteger('user_id');
+            $table->unsignedSmallInteger('blog_id');
+            $table->boolean('like')->nullable();
             $table->timestamps();
         });
     }

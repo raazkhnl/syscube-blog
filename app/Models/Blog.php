@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Support\Str;
+
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -33,7 +35,7 @@ class Blog extends Model
         return $this->morphMany(Comment::class, 'commentable')->whereNull('blog_id');
     }
 
-    public function reactors()
+    public function reactor()
     {
         return $this->hasMany(Reactor::class);
     }

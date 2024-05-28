@@ -2,6 +2,13 @@
 
 return [
 
+    'throttle' => [
+        'login' => [
+            'maxAttempts' => 3,
+            'decayMinutes' => 1,
+        ],
+    ],
+    
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults

@@ -75,15 +75,19 @@
     user@user.com : 12345678
     admin@admin.com : 12345678
     ```
+9. Create Storage link:
+    ```bash
+    php artisan storage:link
+    ```   
 
-9. Start the Laravel development server:
+10. Start the Laravel development server:
     ```bash
     php artisan serve
     ```
 
 ### Running the Application
 
-10. Open your web browser and navigate to the Laravel server URL (typically `http://127.0.0.1:8000`).
+11. Open your web browser and navigate to the Laravel server URL (typically `http://127.0.0.1:8000`).
 
 ## Troubleshooting
 
@@ -93,6 +97,11 @@
     ```bash
     php artisan migrate:refresh --seed
     ```
+- If images fail, try running:
+    ```bash
+    php artisan storage:link
+    ```
+
 
 ## License
 

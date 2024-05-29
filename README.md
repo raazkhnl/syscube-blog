@@ -15,14 +15,13 @@
 
 - **XAMPP Server**
 - **Laravel**
-- **CSS Bootstrap**
-- **MySQL Database**
+- **CSS/Bootstrap**
 
 ## Setup Instructions
 
 ### Cloning the Repository
 
-1. Clone the repository to your local machine:
+1. Clone the repository to your local machine (typically at htdocs):
     ```bash
     git clone https://github.com/raazkhnl/syscube-blog.git
     cd syscube-blog
